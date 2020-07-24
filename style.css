@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  border-radius: 3px;
+  font-family: Helvetica, sans-serif;
+}
+
+p {
+	margin: 0;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.board {
+	border: 2px solid black;
+	width: 500px;
+	height: 500px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+	grid-gap: 5px;
+	padding: 5px;
+}
+
+.square {
+	border: 1px solid purple;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+	font-size: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s;
+}
+
+.square:hover {
+	background-color: #42f5c2;
+	font-color: purple;
+}
